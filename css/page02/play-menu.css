@@ -1,0 +1,13 @@
+.play-menu {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.play-menu i:nth-child(3) {
+    font-size: 60px;
+}
+.play-menu i:last-child,
+.play-menu i:first-child {
+    color: var(--gray);
+}

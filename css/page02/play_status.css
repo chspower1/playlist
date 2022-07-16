@@ -1,0 +1,31 @@
+.play-status {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+.play-time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--gray);
+    margin: 0px 5px;
+    margin-bottom: 10px;
+}
+.play-range {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(193, 193, 193);
+    border-radius: 3px;
+}
+.play-range i {
+    position: absolute;
+    right: 30%;
+    bottom: -5px;
+}
+.play-range__current {
+    width: 70%;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 3px;
+}

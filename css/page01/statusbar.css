@@ -1,0 +1,36 @@
+.song-statusbar {
+    position: absolute;
+    width: 336px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    bottom: 20px;
+}
+.song-statusbar__info {
+    margin-left: 25px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.song-statusbar__singer {
+    font-size: 11px;
+    color: var(--gray);
+}
+.song-statusbar__songname {
+    font-weight: 100;
+    font-size: 14px;
+}
+.song-statusbar__play {
+    margin-right: 25px;
+}
+.song-statusbar__play {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

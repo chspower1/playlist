@@ -1,0 +1,17 @@
+/* page01 */
+@import "./page01/page01.css";
+@import "./page02/page02.css";
+
+/* initial setting */
+@import "./reset.css";
+@import "./font.css";
+@import "./variable.css";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 935px;
+    background-color: rgb(242, 242, 242);
+}

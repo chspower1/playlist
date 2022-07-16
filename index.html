@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: "kyd5uku",
+                        scriptTimeout: 3000,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+        <link rel="stylesheet" href="css/style.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <main class="page01">
+            <section class="select-song">
+                <nav class="nav">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </nav>
+                <div class="song-info">
+                    <img
+                        src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                        class="song-info__img"
+                    />
+                    <h2 class="song-info__songname">보편적인 노래가 되어</h2>
+                    <h3 class="song-info__singer">브로콜리 너 마저</h3>
+                </div>
+                <div class="btn">
+                    <button class="shuffle-btn">shuffle</button>
+                    <button class="like-btn">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>10000</span>
+                    </button>
+                </div>
+            </section>
+            <section class="song-list">
+                <div class="song-list-item">
+                    <img src="./img/page01/01.jpg" class="song-list-img" />
+                    <div class="song-list-item__info">
+                        <span class="song-list-item__singer">델리스파이스</span>
+                        <span class="song-list-item__songname">차우차우</span>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                </div>
+                <div class="song-list-item">
+                    <img src="./img/page01/02.jpg" class="song-list-img" />
+                    <div class="song-list-item__info">
+                        <span class="song-list-item__singer">검정치마</span>
+                        <span class="song-list-item__songname">나랑 아니면</span>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                </div>
+                <div class="song-list-item">
+                    <img src="./img/page01/03.jpg" class="song-list-img" />
+                    <div class="song-list-item__info">
+                        <span class="song-list-item__singer">넬</span>
+                        <span class="song-list-item__songname">Good Night</span>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                </div>
+                <div class="song-list-item">
+                    <img src="./img/page01/04.jpg" class="song-list-img" />
+                    <div class="song-list-item__info">
+                        <span class="song-list-item__singer">언니네 이발관</span>
+                        <span class="song-list-item__songname">순간을 믿어요</span>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+                </div>
+            </section>
+            <div class="song-statusbar">
+                <div class="song-statusbar__info">
+                    <span class="song-statusbar__singer">델리스파이스</span>
+                    <span class="song-statusbar__songname">고백</span>
+                </div>
+                <div class="song-statusbar__play">
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-pause fa-2xl"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+            </div>
+        </main>
+        <main class="page02">
+            <nav class="nav">
+                <i class="fa-solid fa-arrow-left"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </nav>
+            <section class="song-info">
+                <img
+                    src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    class="song-info__img main-img"
+                />
+                <h2 class="song-info__songname">보편적인 노래가 되어</h2>
+                <h3 class="song-info__singer">브로콜리 너 마저</h3>
+            </section>
+            <section class="play-status">
+                <div class="play-time">
+                    <span class="play-time__cur">2:31</span>
+                    <span class="play-time__end">3:45</span>
+                </div>
+                <div class="play-range">
+                    <div class="play-range__current"></div>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+            </section>
+            <section class="play-menu">
+                <i class="fa-solid fa-rotate fa-2xl"></i>
+                <i class="fa-solid fa-backward-step fa-2xl"></i>
+                <i class="fa-solid fa-circle-play fa-2xl"></i>
+                <i class="fa-solid fa-forward-step fa-2xl"></i>
+                <i class="fa-solid fa-shuffle fa-2xl"></i>
+            </section>
+        </main>
+        <script src="https://kit.fontawesome.com/ed1b8a51c2.js" crossorigin="anonymous"></script>
+        <script src="./font.js"></script>
+    </body>
+</html>
